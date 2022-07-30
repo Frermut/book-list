@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        span,
+        .fa-book-open {
+            color: #DEC48B;
+        }
+        
+        input[type="submit"] {
+            background-color: #DEC48B;
+            color: black;
+        }
+        
+        .fa-circle-xmark {
+            color: red;
+            transition: 300ms;
+            cursor: pointer;
+        }
+        
+        .fa-circle-xmark:hover {
+            transform: scale(1.3);
+            transition: 300ms;
+        }
+        
+        .success,
+        .error {
+            color: white;
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border-radius: 5px;
+        }
+        
+        .success {
+            background: green;
+        }
+        
+        .error {
+            background: red;
+        }
+    </style>
+    <title>Book List</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- <i class="fas fa-book-open text-primary"></i> -->
+        <h1><i class="fa-solid fa-book-open"></i>My<span>Book</span>List</h1>
+        <form id="book-form">
+            <div>
+                <label for="title">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="isbn">ISBN#</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width">
+            </div>
+        </form>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+
+                    <th>Author</th>
+
+                    <th>ISBN</th>
+
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list">
+
+                <!-- <td>Harry Potter</td>
+                <td>Lobby</td>
+                <td>122422433333333</td> 
+            <i class="fa-solid fa-circle-xmark"></i>-->
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
